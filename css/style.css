@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+:root{
+--primary-color: darkblue;
+}
 
 span{
 color: blue;
@@ -41,7 +44,7 @@ img{
 }
 
 .navbar{
-    background-color: darkblue;
+    background-color: var(--primary-color);
     color: white;
     height: 70px;
     
@@ -49,6 +52,59 @@ img{
 
 .navbar .flex{
     justify-content: space-between;
+}
+
+/*showcase*/
+
+.showcase h1{
+    font-size: 40px;
+}
+
+.showcase .grid{
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    overflow: visible;
+    padding: 40px;
+    z-index: 100;
+
+}
+
+.showcase-form .form-control {
+    margin: 30px;
+
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="e-mail"], 
+.showcase-form input[type="text"]{
+    border: 0;
+    border-bottom: 2px solid grey;
+    width: 100%;
+    padding:  3px;
+    font-size: 16px;
+
+}
+.showcase-form input:focus{
+    outline: none;
+}
+
+
+.showcase p{
+    margin: 20px 0;
+}
+
+.showcase{
+    height: 400px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
 }
 
 .navbar ul{
@@ -71,9 +127,49 @@ img{
     padding: 0 40px;
 }
 
+.card{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(1, 1, 1, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid;
+
+}
+
+.btn:hover{
+    transform:scale(0.8);
+}
+
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
 }
