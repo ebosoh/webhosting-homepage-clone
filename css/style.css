@@ -76,6 +76,8 @@ img{
 
 }
 
+
+
 .showcase-form .form-control {
     margin: 30px;
 
@@ -149,6 +151,10 @@ img{
     padding: 20px;
     margin: 10px;
 }
+
+.numbers{
+    padding: 80px;
+}
 .btn{
     display: inline-block;
     padding: 10px 30px;
@@ -182,10 +188,11 @@ img{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap:20px;
     justify-content: center;
     align-items: center;
     height: 100%;
 
 }
+
